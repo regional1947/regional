@@ -338,7 +338,7 @@
             let response = JSON.parse(this.response);
             if (response.accountNumber != null) {
               setCookie("acc", response.accountNumber, 10);
-              location.href = "/user/dashboard.html";
+              location.href = "/user/about-us.html";
             } else {
               document.getElementById("incorrect-pass").style.display = "block";
             }
