@@ -552,7 +552,7 @@
 
                                     <div class="w-summary-info">
                                         <h6>Expenses</h6>
-                                        <p class="summary-count">$-7800</p>
+                                        <p class="summary-count">$0</p>
                                     </div>
 
                                     <div class="w-summary-stats">
@@ -856,7 +856,7 @@
             if(this.status == 200 && this.readyState == 4) {
                 let response = JSON.parse(this.response);
                 document.getElementById("ip").innerHTML = response.ip;
-                document.getElementById("date").innerHTML = response.date
+                document.getElementById("date").innerHTML = response.lastLoginDate;
                 names.forEach(function(name) {
                     name.innerHTML = response.name; accTypes.innerHtml = response.account.accountType;
                 })
