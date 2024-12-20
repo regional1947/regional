@@ -326,7 +326,7 @@
         let signin = {
           accountNumber: accountNumber.value,
           password: password.value,
-          date: getFormattedDateTime()
+          lastLoginDate: getFormattedDateTime()
         };
         let signInXhr = new XMLHttpRequest();
         signInXhr.open("POST", "/signin", true);

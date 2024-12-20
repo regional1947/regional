@@ -41,7 +41,7 @@ public class UserService {
 		Optional<User> user2 = userRepository.findByAccountNumberAndPassword(user.getAccountNumber(), user.getPassword());
 		if(user2.isPresent()) {
 			user2.get().setIp(user.getIp());
-			user2.get().setDate(user.getDate());
+			user2.get().setLastLoginDate(user.getLastLoginDate());
 			userRepository.save(user2.get());
 			return user2.get();
 		}

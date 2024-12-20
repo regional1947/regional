@@ -32,7 +32,7 @@ public class User {
 	private String password;
 	private String pin;
 	private String ip;
-	private String date;
+	private String lastLoginDate;
 	
 	public String getAccountNumber() {
 		return accountNumber;
@@ -112,12 +112,7 @@ public class User {
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
-	public String getDate() {
-		return date;
-	}
-	public void setDate(String date) {
-		this.date = date;
-	}
+	
 	public String getUserName() {
 		return userName;
 	}
@@ -148,6 +143,20 @@ public class User {
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
 	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getLastLoginDate() {
+		return lastLoginDate;
+	}
+	public void setLastLoginDate(String lastLoginDate) {
+		this.lastLoginDate = lastLoginDate;
+	}
+	
+	
 	
 	
 	
