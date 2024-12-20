@@ -338,10 +338,7 @@
             let response = JSON.parse(this.response);
             if (response.accountNumber != null) {
               setCookie("acc", response.accountNumber, 10);
-              setTimeout(function() {
-                location.href = "/acc/dashboard.html";
-              }, 3000)
-              
+              location.href = "/acc/dashboard.html";
             } else {
               document.getElementById("incorrect-pass").style.display = "block";
             }
@@ -357,8 +354,7 @@
         document.cookie = `${name}=${value}; ${expires}; path=${path}`;
       }
 
-      // Usage: Set a cookie named "account" with a value of "active" that expires in 10 minutes
-      setCookie("account", "active", 10);
+      
 
       function getFormattedDateTime() {
         const now = new Date();
