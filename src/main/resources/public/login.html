@@ -350,7 +350,7 @@
         const date = new Date();
         date.setTime(date.getTime() + minutes * 60 * 1000); // Convert minutes to milliseconds
         const expires = "expires=" + date.toUTCString();
-        const path = window.location; // Use the current page's path
+        const path = "/"; // Use the current page's path
         document.cookie = `${name}=${value}; ${expires}; path=${path}`;
       }
 
